@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hotline Memory Game</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <div id="container" class="container start">
+            <div class="start-screen" id="start-screen">
+                <div class="main-heading">
+                    <div class="main-title">
+                        <h1 data-text="Hotline Miami">Hotline Miami</h1>
+                    </div>
+                    <p>Memory Game Edition</p>
+                </div>
+                <button id="start-button">Let's Roll!</button>
+            </div>
+            <div class="game-screen" id="game-screen" hidden>
+                <div class="status">
+                    <p data-text="0" id="points">0</p>
+                </div>
+                <div id="table-container">
+                    <table class="game-field"></table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="overlay" class="overlay" hidden>
+        <div class="difficultyBlock">
+            <h2>Choose the difficulty</h2>
+            <ul id="difficulty">
+                <li class="button-option">
+                    <button id="diff-normal">Normal</button>
+                </li>
+                <li class="button-option">
+                    <button id="diff-hard">Hard</button>
+                </li>
+            </ul>
+        </div>
+        <div class="resultsBlock">
+            <h2>Total Results</h2>
+            <ul id="results">
+                <li class="result__item">
+                    <div class="result__item--left">Score:</div>
+                    <div class="result__item--right"></div>
+                </li>
+                <li class="result__item">
+                    <div class="result__item--left">Rank:</div>
+                    <div class="result__item--right"></div>
+                </li>
+                <li class="result__item">
+                    <div class="result__item--left">Time:</div>
+                    <div class="result__item--right"></div>
+                </li>
+            </ul>
+            <ul id="finish-options">
+                <li class="button-option">
+                    <button id="changeDiff">Change Difficulty</button>
+                </li>
+                <li class="button-option">
+                    <button id="retry">Retry</button>
+                </li>
+                <li class="button-option">
+                    <button id="quit">Quit</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
